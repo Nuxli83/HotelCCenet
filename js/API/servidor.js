@@ -22,8 +22,9 @@ function enviarReservas(th,pr,ha,di){
 	}).done(function(msg) {
 		if(msg==1){
 			navigator.notification.alert("Datos Enviados Correctamente",function(){
-				var x = 0;
+
 				//guardar en historial
+				CrearHistorias(th,pr,ha,di);
 			},"Reserva Realizada","Aceptar");	
 		}else{
 			navigator.notification.alert("Hubo un error en el registro",null,"Error","Aceptar");

@@ -48,6 +48,8 @@ $(function(){
 			else
 				crearReservas(th,pr,ha,di);//Guardamos datos localmente
 		});
+		document.addEventListener("online",LeerReservas,false);
+		
 	}, false);
 });
 
