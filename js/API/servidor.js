@@ -2,7 +2,7 @@
 function enviarDatos(nom,mail,tel,foto){
 	$.ajax({
 		type: "POST",
-		url: "http://10.175.11.51/pgtest.php",
+		url: "http://10.175.11.74/pgtest.php",
 		data: "nom="+nom+"&mai="+mail+"&tel="+tel
 	}).done(function(msg){
 		if(msg==1){
